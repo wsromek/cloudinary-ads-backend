@@ -1,0 +1,22 @@
+{
+  "scripts": {
+    "start": "node src/main.js",
+    "test": "mocha 'test/**/*.test.js'",
+    "prettify": "prettier --write src/ test/"
+  },
+  "pre-commit": [
+    "prettify"
+  ],
+  "dependencies": {
+    "cors": "2.8.5",
+    "date-fns": "2.16.1",
+    "express": "4.17.1",
+    "mongodb": "3.6.3"
+  },
+  "devDependencies": {
+    "mocha": "8.1.1",
+    "pre-commit": "1.2.2",
+    "prettier": "2.0.5",
+    "supertest": "6.0.1"
+  }
+}
